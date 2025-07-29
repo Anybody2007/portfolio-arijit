@@ -145,69 +145,50 @@
 
   "projects": [
     {
-      "title": "Network Redesign",
-      "description": "Complete network infrastructure overhaul for a 500+ employee company, implementing SD-WAN and improving performance by 40%.",
-      "technologies": ["Cisco", "SD-WAN", "BGP", "MPLS", "Network Monitoring"],
-      "date": "2023",
+      "title": "Elasticsearch, Kibana, and Logstash Docker Configuration",
+      "description": "Complete network logging and alerting for a 100+ devices in the company, implementing Log and improving performance by 20%.",
+      "technologies": ["Docker", "Elastic-Search", "Logstash", "Kibana", "Network Monitoring"],
+      "date": "2024",
       "status": "Completed",
-      "category": "Network Infrastructure"
+      "category": "Logging Network Infrastructure",
+      "link": ""
     },
     {
-      "title": "Cloud Migration Project",
-      "description": "Migrated on-premise infrastructure to AWS, implementing auto-scaling and reducing operational costs by 35%.",
+      "title": "DNS with Bind9 Docker",
+      "description": "Docker Compose setup for running a Bind9 DNS server, alongside the necessary DNS configuration files. It is designed to be easily customizable and deployable. You can use this DNS for your home, so that you make your internet faster.",
       "technologies": [
         "AWS",
-        "Terraform",
-        "Kubernetes",
         "Docker",
-        "CloudFormation"
+        "Network",
+        "DNS"
       ],
-      "date": "2023",
+      "date": "2024",
       "status": "Completed",
-      "category": "Cloud Infrastructure"
+      "category": "On-Prem Infrastructure",
+      "link": ""
     },
     {
-      "title": "Network Security Implementation",
-      "description": "Designed and implemented comprehensive network security architecture including firewalls, IDS/IPS, and threat monitoring.",
+      "title": "Guacamole Container with Nginx Reverse Proxy with 2FA protection",
+      "description": "Designed and implemented comprehensive network security architecture including DMZ implementing secure network access.",
       "technologies": [
-        "Palo Alto",
-        "Splunk",
+        "DMZ",
+        "Access Control List",
         "Network Security",
-        "Threat Analysis"
+        "Audit Log"
       ],
-      "date": "2022",
+      "date": "2024",
       "status": "Completed",
-      "category": "Security"
+      "category": "Security",
+      "link": ""
     },
     {
-      "title": "Automated Infrastructure Deployment",
-      "description": "Built CI/CD pipeline for infrastructure deployment using Infrastructure as Code principles.",
-      "technologies": ["Ansible", "Jenkins", "Python", "Terraform", "Git"],
-      "date": "2022",
+      "title": "DNS with Bind9 and PiHole Combined Docker Configuration",
+      "description": "Docker Compose setup for running a Bind9 DNS server, alongside the necessary DNS configuration files. It is designed to be easily customizable and deployable.  You can use this DNS for your home, so that you make your internet faster.",
+      "technologies": ["Docker", "DNS", "Git"],
+      "date": "2024",
       "status": "Completed",
-      "category": "Automation"
-    },
-    {
-      "title": "Multi-Cloud Connectivity",
-      "description": "Established secure connectivity between AWS, Azure, and on-premise infrastructure with redundant failover mechanisms.",
-      "technologies": [
-        "AWS",
-        "Azure",
-        "VPN",
-        "Direct Connect",
-        "Network Architecture"
-      ],
-      "date": "2021",
-      "status": "Completed",
-      "category": "Network Architecture"
-    },
-    {
-      "title": "IoT Network Design",
-      "description": "Designed scalable IoT network infrastructure for manufacturing facility with 1000+ connected devices.",
-      "technologies": ["IoT", "Network Segmentation", "Edge Computing", "MQTT"],
-      "date": "2021",
-      "status": "Completed",
-      "category": "IoT Infrastructure"
+      "category": "Network Security",
+      "link": ""
     }
   ],
 
@@ -263,7 +244,8 @@
     {
       "name": "Cisco Certified Network Professional (CCNP)",
       "issuer": "Network Kings",
-      "date": "2025"
+      "date": "2025",
+      "link": ""
     },
     {
       "name": "VCP VMware Certified Professional [V7]",
@@ -310,53 +292,32 @@
 
   "blogPosts": [
     {
-      "title": "Implementing Zero-Trust Network Architecture in Enterprise Environments",
-      "excerpt": "A comprehensive guide to designing and implementing zero-trust security models for modern enterprise networks, including practical challenges and solutions.",
-      "date": "2024-01-15",
-      "readTime": "8 min read",
+      "title": "A must-know technique to create a startup service in Linux. Only in 3 min.",
+      "excerpt": "Simple steps to create a startup Service.",
+      "date": "2021-09-13",
+      "readTime": "3 min read",
+      "category": "Linux",
+      "tags": ["Linux", "Security", "Enterprise"],
+      "featured": true,
+      "link": "https://medium.com/@azebra/convert-command-to-service-at-startup-in-linux-in-3-steps-only-in-5-minutes-c69834a3652a"
+    },
+    {
+      "title": "Who is on your WiFi/Network?",
+      "excerpt": "Who is on your WiFi/Network? Find out now!! Only in 3 min. | Netdiscover| Linux| Windows",
+      "date": "2021-09-14",
+      "readTime": "3 min read",
       "category": "Network Security",
-      "tags": ["Zero Trust", "Security", "Enterprise", "Network Design"],
-      "featured": true
+      "tags": ["Network Management", "Scanning", "Security", "Networking"],
+      "link": "https://medium.com/@azebra/who-is-on-your-wifi-network-find-out-now-linux-only-in-3-min-netdiscover-efa0d266a84d"
     },
     {
-      "title": "Multi-Cloud Networking: Best Practices and Pitfalls to Avoid",
-      "excerpt": "Exploring the complexities of connecting multiple cloud providers while maintaining security, performance, and cost efficiency.",
-      "date": "2023-12-20",
-      "readTime": "6 min read",
-      "category": "Cloud Infrastructure",
-      "tags": ["Multi-Cloud", "AWS", "Azure", "Networking"]
-    },
-    {
-      "title": "Automating Network Infrastructure with Infrastructure as Code",
-      "excerpt": "How to leverage Terraform and Ansible to automate network provisioning and configuration management at scale.",
-      "date": "2023-11-28",
-      "readTime": "10 min read",
-      "category": "Automation",
-      "tags": ["IaC", "Terraform", "Ansible", "Automation"]
-    },
-    {
-      "title": "SD-WAN Implementation: A Real-World Case Study",
-      "excerpt": "Lessons learned from implementing SD-WAN across 15 branch offices, including performance improvements and cost savings achieved.",
-      "date": "2023-10-15",
-      "readTime": "7 min read",
-      "category": "Network Infrastructure",
-      "tags": ["SD-WAN", "Case Study", "Performance", "Cost Optimization"]
-    },
-    {
-      "title": "Kubernetes Networking Deep Dive: CNI Plugins Comparison",
-      "excerpt": "An in-depth analysis of popular CNI plugins including Calico, Cilium, and Flannel, with performance benchmarks and use case recommendations.",
-      "date": "2023-09-22",
-      "readTime": "12 min read",
-      "category": "Container Networking",
-      "tags": ["Kubernetes", "CNI", "Container Networking", "Performance"]
-    },
-    {
-      "title": "Network Monitoring and Observability: Tools and Strategies",
-      "excerpt": "Building comprehensive network monitoring solutions using modern observability tools and practices for proactive infrastructure management.",
-      "date": "2023-08-18",
-      "readTime": "9 min read",
-      "category": "Monitoring",
-      "tags": ["Monitoring", "Observability", "Network Management", "Tools"]
+      "title": "Network Scanning |Day — 2 Nmap Tutorial | Intermediate Level",
+      "excerpt": "How to Scan a network with Nmap",
+      "date": "2021-09-17",
+      "readTime": "3 min read",
+      "category": "Network Security",
+      "tags": ["Network Management"],
+      "link": "https://medium.com/@azebra/day-2-network-scanning-nmap-tutorial-intermediate-level-7ec7d7ca2934"
     }
   ],
 
