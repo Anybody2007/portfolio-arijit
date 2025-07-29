@@ -213,80 +213,99 @@
 
   "experience": [
     {
-      "title": "Senior Network Engineer",
-      "company": "TechCorp Solutions",
-      "location": "Kolkata, India",
-      "period": "2022 - Present",
-      "description": "Leading network infrastructure projects and cloud migrations for enterprise clients. Managing a team of 8 engineers and overseeing critical infrastructure deployments.",
+      "title": "Senior IT and Network Admin",
+      "company": "Kloudspot India Private Limited",
+      "location": "Bangalore, India",
+      "period": "2023 - Present",
+      "description": "Leading network infrastructure projects and client deployment. Managing a team of 4 engineers and overseeing critical infrastructure deployments.",
       "achievements": [
-        "Successfully migrated 200+ servers to cloud infrastructure with zero downtime",
-        "Reduced network latency by 40% through strategic infrastructure optimization",
-        "Led implementation of SD-WAN solution across 15 branch offices",
-        "Designed disaster recovery plan achieving 99.9% uptime SLA"
+        "Linux Server Administration: Managed 50+ Linux servers (Ubuntu/ArchLinux), achieving 99.7% uptime through proactive monitoring, rapid troubleshooting, and patch management.",
+        "Cross-Region Network Infrastructure: Engineered a secure multi-region WireGuard VPN connecting 5 office locations, integrating failover links and Nginx reverse proxies—reducing latency by 40% and ensuring 24/7 accessibility for 200+ users.",
+        "Network Optimization: Resolved 95% of critical network issues within SLA (≤1 hour), including routing, switching, and firewall configurations across Cisco and Mikrotik devices, slashing downtime by 30%.",
+        "Automated Certificate Management: Automated SSL renewals for 150+ devices using Bash/Let’s Encrypt, eliminating manual effort and preventing 100% of certificate-related outages.",
+        "High-Availability Infrastructure: Maintained Proxmox/VMware + TrueNAS clusters across 3 regions with cross-region replication, supporting 200+ VMs and cutting recovery time by 70% during regional outages.",
+        "Unified Monitoring: Centralized oversight of 500+ endpoints via Tactical RMM, enabling real-time alerts and reducing manual audit time by 50%.",
+        "ISO 9001 Compliance: Led documentation and process alignment for ISO 9001 certification, achieving 100% compliance in the first audit cycle with zero non-conformities."
       ],
-      "technologies": ["AWS", "Cisco", "SD-WAN", "Terraform", "Kubernetes"]
+      "technologies": ["Mikrotik", "Cisco", "VMware", "Ansible", "Kubernetes","Firewalls", "VPN"]
     },
     {
-      "title": "Network Infrastructure Specialist",
-      "company": "CloudFirst Inc",
-      "location": "Mumbai, India",
-      "period": "2020 - 2022",
-      "description": "Specialized in cloud networking and infrastructure automation. Responsible for designing scalable network architectures and implementing security best practices.",
+      "title": "Service Delivery Engineer",
+      "company": "Zen & Art Infotek Pvt Ltd",
+      "location": "Bangalore, India",
+      "period": "2021 - 2023",
+      "description": "Specialized vmware infrastructure. Responsible for managing and maintaing a Comercial Bank VMWare enviroment with a 500+ servers.",
       "achievements": [
-        "Implemented automated network provisioning reducing deployment time by 60%",
-        "Designed multi-cloud connectivity solution for hybrid infrastructure",
-        "Achieved cost reduction of 35% through infrastructure optimization",
-        "Established network monitoring and alerting systems"
+        "VMware vCenter/ESXi VxRail Management: Managed 100+ ESXi hosts across 3 VxRail clusters supporting 500+ VMs, achieving 99.95% uptime through proactive monitoring, snapshot consolidation, and RDM/datastore optimization.",
+        "High-Availability Operations: Ensured continuous operations via HA/DRS configurations and 200+ monthly vMotion migrations, resolving 95% of job failures within 30 minutes to maintain SLA compliance.",
+        "vSAN Performance Optimization: Implemented space efficiency (dedupe/compression), reservation policies, and fault domains - reducing storage costs by 25% while improving disk balance by 40% across clusters.",
+        "Backup Infrastructure Support: Provided secondary administration for enterprise backup systems (Veeam/Commvault), resolving 90% of backup failures for 50TB+ daily backups, ensuring <1hr RPO for critical systems.",
+        "Process-Driven Incident Resolution: Resolved 120+ monthly tickets following strict SOPs, maintaining 100% audit readiness for virtualization infrastructure."
       ],
-      "technologies": ["Azure", "AWS", "Python", "Ansible", "Network Security"]
+      "technologies": ["VMware", "NetWorker", "iDRAC", "VxRail"]
     },
     {
-      "title": "Junior Network Engineer",
-      "company": "SecureNet Systems",
+      "title": "Systems Engineer",
+      "company": "OnProcess Technology",
       "location": "Kolkata, India",
-      "period": "2019 - 2020",
-      "description": "Started career focusing on network configuration, troubleshooting, and security implementations. Gained hands-on experience with enterprise networking equipment.",
+      "period": "2018 - 2020",
+      "description": "Started career focusing on desktop support, troubleshooting, and security implementations. Gained hands-on experience with enterprise system and networking equipment.",
       "achievements": [
-        "Configured and maintained network infrastructure for 50+ clients",
-        "Implemented network security policies and firewall configurations",
-        "Reduced network incidents by 45% through proactive monitoring",
-        "Completed Cisco CCNA and security certifications"
+        "Enterprise Ticketing & SLA Compliance: Resolved 300+ monthly technical tickets via JIRA for 500+ end-users, achieving 95% SLA compliance (≤4hr resolution for critical issues) across Windows, VMware, and VPN systems.",
+        "Frontline Infrastructure Support: Owned Tier-1 troubleshooting for VMware (vCenter/ESXi), Active Directory, and VPN systems – resolving 90% of password/access issues in <15 minutes and reducing AD-related tickets by 40% through proactive account hygiene.",
+        "Windows Deployment & Management: Streamlined OS deployment for 100+ Windows systems annually using standardized imaging tools, cutting setup time by 50% and ensuring 100% security patch compliance."
       ],
-      "technologies": [
-        "Cisco",
-        "Network Security",
-        "Firewalls",
-        "VPN",
-        "Network Monitoring"
-      ]
+      "technologies": ["Windows", "Linux", "AD"]
     }
   ],
 
   "certifications": [
     {
-      "name": "AWS Certified Solutions Architect - Professional",
-      "issuer": "Amazon Web Services",
-      "date": "2023",
-      "credentialId": "AWS-PSA-123456"
-    },
-    {
       "name": "Cisco Certified Network Professional (CCNP)",
-      "issuer": "Cisco",
-      "date": "2022",
-      "credentialId": "CCNP-123456"
+      "issuer": "Network Kings",
+      "date": "2025"
     },
     {
-      "name": "Certified Kubernetes Administrator (CKA)",
-      "issuer": "Cloud Native Computing Foundation",
-      "date": "2022",
-      "credentialId": "CKA-123456"
+      "name": "VCP VMware Certified Professional [V7]",
+      "issuer": "VMWare",
+      "date": "2023",
+      "credentialId": "VMW-03070710P-030137656"
     },
     {
-      "name": "Microsoft Azure Network Engineer Associate",
-      "issuer": "Microsoft",
-      "date": "2021",
-      "credentialId": "AZ-700-123456"
+      "name": "VMware vSAN: Plan and Deploy [V7]",
+      "issuer": "VMWare",
+      "date": "2022",
+      "credentialId": "VVMW-03070710P-03013765"
+    },
+    {
+      "name": "VMware vSphere: Optimize and Scale [V7]",
+      "issuer": "VMWare",
+      "date": "2022",
+      "credentialId": "VMW-03070710P-03013765"
+    },
+    {
+      "name": "Red Hat Certified System Administrator (EX200)",
+      "issuer": "Linkedin",
+      "date": "2022",
+      "credentialId": "AQTt22D4r05LBiPwwzCEGgA1RHvd"
+    },
+    {
+      "name": "VxRail Administration",
+      "issuer": "DELL",
+      "date": "2022"
+    },
+    {
+      "name": "VCF 4.2 on VxRail Administration",
+      "issuer": "DELL",
+      "date": "2022"
+    },
+    {
+      "name": "CompTIA Network+",
+      "issuer": "CYBARY",
+      "date": "2018",
+      "credentialId": "C-6d48f7a34-8a7bac"
     }
+
   ],
 
   "blogPosts": [
