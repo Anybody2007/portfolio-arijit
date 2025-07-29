@@ -1,0 +1,296 @@
+{
+  "personal": {
+    "name": "Arijit Sarkar",
+    "title": "Network & Infrastructure Engineer",
+    "initials": "AS",
+    "description": "Passionate about building robust network architectures and scalable infrastructure solutions. Specializing in cloud technologies, network security, and system optimization.",
+    "location": "Kolkata, India",
+    "experience": "5+ Years",
+    "specialization": "Network Architecture & Cloud Infrastructure",
+    "email": "arijit.sarkar@email.com",
+    "phone": "+91 98765 43210"
+  },
+  
+  "about": {
+    "paragraphs": [
+      "With over 5 years of experience in network and infrastructure engineering, I've dedicated my career to designing and implementing robust, scalable solutions that power modern enterprises.",
+      "My expertise spans across cloud platforms, network security, automation, and infrastructure optimization. I'm passionate about leveraging cutting-edge technologies to solve complex problems and drive business success.",
+      "When I'm not architecting networks, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical blogs and community forums."
+    ]
+  },
+  
+  "skills": [
+    {
+      "icon": "Network",
+      "title": "Network Technologies",
+      "skills": ["Cisco Routing & Switching", "BGP/OSPF", "MPLS", "SD-WAN", "Network Monitoring", "Load Balancing"]
+    },
+    {
+      "icon": "Cloud",
+      "title": "Cloud Platforms",
+      "skills": ["AWS", "Azure", "Google Cloud", "Terraform", "CloudFormation", "Kubernetes"]
+    },
+    {
+      "icon": "Shield",
+      "title": "Security",
+      "skills": ["Firewall Configuration", "VPN", "Network Security", "Threat Analysis", "Compliance", "Identity Management"]
+    },
+    {
+      "icon": "Server",
+      "title": "Infrastructure",
+      "skills": ["Linux Administration", "Windows Server", "VMware", "Docker", "Monitoring Tools", "Backup Solutions"]
+    },
+    {
+      "icon": "Code",
+      "title": "Automation",
+      "skills": ["Python", "Bash Scripting", "Ansible", "Jenkins", "CI/CD", "Infrastructure as Code"]
+    },
+    {
+      "icon": "Database",
+      "title": "Data & Analytics",
+      "skills": ["Network Analytics", "Performance Monitoring", "Log Analysis", "Grafana", "Prometheus", "ELK Stack"]
+    }
+  ],
+  
+  "stats": [
+    { "number": "50+", "label": "Projects Completed" },
+    { "number": "99.9%", "label": "Uptime Achieved" },
+    { "number": "200+", "label": "Servers Managed" },
+    { "number": "5+", "label": "Years Experience" }
+  ],
+  
+  "achievements": [
+    {
+      "icon": "Award",
+      "title": "AWS Certified Solutions Architect",
+      "description": "Professional level certification demonstrating expertise in designing distributed systems on AWS",
+      "year": "2023"
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "Network Performance Optimization",
+      "description": "Achieved 40% improvement in network performance for enterprise clients through infrastructure redesign",
+      "year": "2023"
+    },
+    {
+      "icon": "Users",
+      "title": "Team Leadership",
+      "description": "Successfully led a team of 8 engineers in migrating critical infrastructure to cloud",
+      "year": "2022"
+    },
+    {
+      "icon": "CheckCircle",
+      "title": "Zero Downtime Migration",
+      "description": "Orchestrated seamless migration of 200+ servers with zero business impact",
+      "year": "2022"
+    }
+  ],
+  
+  "testimonials": [
+    {
+      "name": "Sarah Johnson",
+      "role": "IT Director",
+      "company": "TechCorp Solutions",
+      "content": "Arijit's expertise in network architecture was instrumental in our digital transformation. His attention to detail and proactive approach ensured our migration was seamless and secure.",
+      "rating": 5
+    },
+    {
+      "name": "Michael Chen",
+      "role": "CTO",
+      "company": "CloudFirst Inc",
+      "content": "Working with Arijit was exceptional. His deep understanding of cloud infrastructure and automation helped us reduce operational costs by 35% while improving system reliability.",
+      "rating": 5
+    },
+    {
+      "name": "Emily Rodriguez",
+      "role": "Project Manager",
+      "company": "SecureNet Systems",
+      "content": "Arijit's leadership during our network security overhaul was outstanding. He delivered the project on time and exceeded our security compliance requirements.",
+      "rating": 5
+    }
+  ],
+  
+  "projects": [
+    {
+      "title": "Enterprise Network Redesign",
+      "description": "Complete network infrastructure overhaul for a 500+ employee company, implementing SD-WAN and improving performance by 40%.",
+      "technologies": ["Cisco", "SD-WAN", "BGP", "MPLS", "Network Monitoring"],
+      "date": "2023",
+      "status": "Completed",
+      "category": "Network Infrastructure"
+    },
+    {
+      "title": "Cloud Migration Project",
+      "description": "Migrated on-premise infrastructure to AWS, implementing auto-scaling and reducing operational costs by 35%.",
+      "technologies": ["AWS", "Terraform", "Kubernetes", "Docker", "CloudFormation"],
+      "date": "2023",
+      "status": "Completed",
+      "category": "Cloud Infrastructure"
+    },
+    {
+      "title": "Network Security Implementation",
+      "description": "Designed and implemented comprehensive network security architecture including firewalls, IDS/IPS, and threat monitoring.",
+      "technologies": ["Palo Alto", "Splunk", "Network Security", "Threat Analysis"],
+      "date": "2022",
+      "status": "Completed",
+      "category": "Security"
+    },
+    {
+      "title": "Automated Infrastructure Deployment",
+      "description": "Built CI/CD pipeline for infrastructure deployment using Infrastructure as Code principles.",
+      "technologies": ["Ansible", "Jenkins", "Python", "Terraform", "Git"],
+      "date": "2022",
+      "status": "Completed",
+      "category": "Automation"
+    },
+    {
+      "title": "Multi-Cloud Connectivity",
+      "description": "Established secure connectivity between AWS, Azure, and on-premise infrastructure with redundant failover mechanisms.",
+      "technologies": ["AWS", "Azure", "VPN", "Direct Connect", "Network Architecture"],
+      "date": "2021",
+      "status": "Completed",
+      "category": "Network Architecture"
+    },
+    {
+      "title": "IoT Network Design",
+      "description": "Designed scalable IoT network infrastructure for manufacturing facility with 1000+ connected devices.",
+      "technologies": ["IoT", "Network Segmentation", "Edge Computing", "MQTT"],
+      "date": "2021",
+      "status": "Completed",
+      "category": "IoT Infrastructure"
+    }
+  ],
+  
+  "experience": [
+    {
+      "title": "Senior Network Engineer",
+      "company": "TechCorp Solutions",
+      "location": "Kolkata, India",
+      "period": "2022 - Present",
+      "description": "Leading network infrastructure projects and cloud migrations for enterprise clients. Managing a team of 8 engineers and overseeing critical infrastructure deployments.",
+      "achievements": [
+        "Successfully migrated 200+ servers to cloud infrastructure with zero downtime",
+        "Reduced network latency by 40% through strategic infrastructure optimization",
+        "Led implementation of SD-WAN solution across 15 branch offices",
+        "Designed disaster recovery plan achieving 99.9% uptime SLA"
+      ],
+      "technologies": ["AWS", "Cisco", "SD-WAN", "Terraform", "Kubernetes"]
+    },
+    {
+      "title": "Network Infrastructure Specialist",
+      "company": "CloudFirst Inc",
+      "location": "Mumbai, India",
+      "period": "2020 - 2022",
+      "description": "Specialized in cloud networking and infrastructure automation. Responsible for designing scalable network architectures and implementing security best practices.",
+      "achievements": [
+        "Implemented automated network provisioning reducing deployment time by 60%",
+        "Designed multi-cloud connectivity solution for hybrid infrastructure",
+        "Achieved cost reduction of 35% through infrastructure optimization",
+        "Established network monitoring and alerting systems"
+      ],
+      "technologies": ["Azure", "AWS", "Python", "Ansible", "Network Security"]
+    },
+    {
+      "title": "Junior Network Engineer",
+      "company": "SecureNet Systems",
+      "location": "Kolkata, India",
+      "period": "2019 - 2020",
+      "description": "Started career focusing on network configuration, troubleshooting, and security implementations. Gained hands-on experience with enterprise networking equipment.",
+      "achievements": [
+        "Configured and maintained network infrastructure for 50+ clients",
+        "Implemented network security policies and firewall configurations",
+        "Reduced network incidents by 45% through proactive monitoring",
+        "Completed Cisco CCNA and security certifications"
+      ],
+      "technologies": ["Cisco", "Network Security", "Firewalls", "VPN", "Network Monitoring"]
+    }
+  ],
+  
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect - Professional",
+      "issuer": "Amazon Web Services",
+      "date": "2023",
+      "credentialId": "AWS-PSA-123456"
+    },
+    {
+      "name": "Cisco Certified Network Professional (CCNP)",
+      "issuer": "Cisco",
+      "date": "2022",
+      "credentialId": "CCNP-123456"
+    },
+    {
+      "name": "Certified Kubernetes Administrator (CKA)",
+      "issuer": "Cloud Native Computing Foundation",
+      "date": "2022",
+      "credentialId": "CKA-123456"
+    },
+    {
+      "name": "Microsoft Azure Network Engineer Associate",
+      "issuer": "Microsoft",
+      "date": "2021",
+      "credentialId": "AZ-700-123456"
+    }
+  ],
+  
+  "blogPosts": [
+    {
+      "title": "Implementing Zero-Trust Network Architecture in Enterprise Environments",
+      "excerpt": "A comprehensive guide to designing and implementing zero-trust security models for modern enterprise networks, including practical challenges and solutions.",
+      "date": "2024-01-15",
+      "readTime": "8 min read",
+      "category": "Network Security",
+      "tags": ["Zero Trust", "Security", "Enterprise", "Network Design"],
+      "featured": true
+    },
+    {
+      "title": "Multi-Cloud Networking: Best Practices and Pitfalls to Avoid",
+      "excerpt": "Exploring the complexities of connecting multiple cloud providers while maintaining security, performance, and cost efficiency.",
+      "date": "2023-12-20",
+      "readTime": "6 min read",
+      "category": "Cloud Infrastructure",
+      "tags": ["Multi-Cloud", "AWS", "Azure", "Networking"]
+    },
+    {
+      "title": "Automating Network Infrastructure with Infrastructure as Code",
+      "excerpt": "How to leverage Terraform and Ansible to automate network provisioning and configuration management at scale.",
+      "date": "2023-11-28",
+      "readTime": "10 min read",
+      "category": "Automation",
+      "tags": ["IaC", "Terraform", "Ansible", "Automation"]
+    },
+    {
+      "title": "SD-WAN Implementation: A Real-World Case Study",
+      "excerpt": "Lessons learned from implementing SD-WAN across 15 branch offices, including performance improvements and cost savings achieved.",
+      "date": "2023-10-15",
+      "readTime": "7 min read",
+      "category": "Network Infrastructure",
+      "tags": ["SD-WAN", "Case Study", "Performance", "Cost Optimization"]
+    },
+    {
+      "title": "Kubernetes Networking Deep Dive: CNI Plugins Comparison",
+      "excerpt": "An in-depth analysis of popular CNI plugins including Calico, Cilium, and Flannel, with performance benchmarks and use case recommendations.",
+      "date": "2023-09-22",
+      "readTime": "12 min read",
+      "category": "Container Networking",
+      "tags": ["Kubernetes", "CNI", "Container Networking", "Performance"]
+    },
+    {
+      "title": "Network Monitoring and Observability: Tools and Strategies",
+      "excerpt": "Building comprehensive network monitoring solutions using modern observability tools and practices for proactive infrastructure management.",
+      "date": "2023-08-18",
+      "readTime": "9 min read",
+      "category": "Monitoring",
+      "tags": ["Monitoring", "Observability", "Network Management", "Tools"]
+    }
+  ],
+  
+  "blogCategories": ["All", "Network Security", "Cloud Infrastructure", "Automation", "Network Infrastructure", "Container Networking", "Monitoring"],
+  
+  "navigation": [
+    { "name": "Home", "path": "/" },
+    { "name": "Projects", "path": "/projects" },
+    { "name": "Experience", "path": "/experience" },
+    { "name": "Blogs", "path": "/blogs" }
+  ]
+}

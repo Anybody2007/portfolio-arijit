@@ -1,38 +1,19 @@
 import { Cloud, Network, Shield, Server, Code, Database } from "lucide-react";
+import { useData } from "@/hooks/useData";
 
 const Skills = () => {
-  const skillCategories = [
-    {
-      icon: Network,
-      title: "Network Technologies",
-      skills: ["Cisco Routing & Switching", "BGP/OSPF", "MPLS", "SD-WAN", "Network Monitoring", "Load Balancing"]
-    },
-    {
-      icon: Cloud,
-      title: "Cloud Platforms",
-      skills: ["AWS", "Azure", "Google Cloud", "Terraform", "CloudFormation", "Kubernetes"]
-    },
-    {
-      icon: Shield,
-      title: "Security",
-      skills: ["Firewall Configuration", "VPN", "Network Security", "Threat Analysis", "Compliance", "Identity Management"]
-    },
-    {
-      icon: Server,
-      title: "Infrastructure",
-      skills: ["Linux Administration", "Windows Server", "VMware", "Docker", "Monitoring Tools", "Backup Solutions"]
-    },
-    {
-      icon: Code,
-      title: "Automation",
-      skills: ["Python", "Bash Scripting", "Ansible", "Jenkins", "CI/CD", "Infrastructure as Code"]
-    },
-    {
-      icon: Database,
-      title: "Data & Analytics",
-      skills: ["Network Analytics", "Performance Monitoring", "Log Analysis", "Grafana", "Prometheus", "ELK Stack"]
-    }
-  ];
+  const { data, loading } = useData();
+
+  if (loading || !data) return null;
+
+  const iconMap = {
+    Network,
+    Cloud,
+    Shield,
+    Server,
+    Code,
+    Database
+  };
 
   return (
     <section className="py-20">
@@ -42,8 +23,8 @@ const Skills = () => {
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillCategories.map((category, index) => {
-            const Icon = category.icon;
+          {data.skills.map((category, index) => {
+            const Icon = iconMap[category.icon as keyof typeof iconMap];
             return (
               <div 
                 key={index}

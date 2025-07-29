@@ -2,17 +2,16 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useData } from "@/hooks/useData";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { data, loading } = useData();
 
-  const navItems = [
-    { name: "Home", path: "/" },
-    { name: "Projects", path: "/projects" },
-    { name: "Experience", path: "/experience" },
-    { name: "Blogs", path: "/blogs" },
-  ];
+  if (loading || !data) return null;
+
+  const navItems = data.navigation;
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -21,7 +20,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="text-xl font-bold text-primary">
-            Arijit Sarkar
+            {data.personal.name}
           </Link>
 
           {/* Desktop Navigation */}

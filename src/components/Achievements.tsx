@@ -1,39 +1,17 @@
 import { Award, TrendingUp, Users, CheckCircle } from "lucide-react";
+import { useData } from "@/hooks/useData";
 
 const Achievements = () => {
-  const achievements = [
-    {
-      icon: Award,
-      title: "AWS Certified Solutions Architect",
-      description: "Professional level certification demonstrating expertise in designing distributed systems on AWS",
-      year: "2023"
-    },
-    {
-      icon: TrendingUp,
-      title: "Network Performance Optimization",
-      description: "Achieved 40% improvement in network performance for enterprise clients through infrastructure redesign",
-      year: "2023"
-    },
-    {
-      icon: Users,
-      title: "Team Leadership",
-      description: "Successfully led a team of 8 engineers in migrating critical infrastructure to cloud",
-      year: "2022"
-    },
-    {
-      icon: CheckCircle,
-      title: "Zero Downtime Migration",
-      description: "Orchestrated seamless migration of 200+ servers with zero business impact",
-      year: "2022"
-    }
-  ];
+  const { data, loading } = useData();
 
-  const stats = [
-    { number: "50+", label: "Projects Completed" },
-    { number: "99.9%", label: "Uptime Achieved" },
-    { number: "200+", label: "Servers Managed" },
-    { number: "5+", label: "Years Experience" }
-  ];
+  if (loading || !data) return null;
+
+  const iconMap = {
+    Award,
+    TrendingUp,
+    Users,
+    CheckCircle
+  };
 
   return (
     <section className="py-20 bg-tech-surface">
@@ -44,7 +22,7 @@ const Achievements = () => {
         
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-          {stats.map((stat, index) => (
+          {data.stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.number}</div>
               <div className="text-muted-foreground">{stat.label}</div>
@@ -54,8 +32,8 @@ const Achievements = () => {
         
         {/* Achievements */}
         <div className="grid md:grid-cols-2 gap-8">
-          {achievements.map((achievement, index) => {
-            const Icon = achievement.icon;
+          {data.achievements.map((achievement, index) => {
+            const Icon = iconMap[achievement.icon as keyof typeof iconMap];
             return (
               <div 
                 key={index}

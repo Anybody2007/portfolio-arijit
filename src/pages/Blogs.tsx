@@ -1,61 +1,12 @@
 import Navigation from "@/components/Navigation";
 import { Calendar, Clock, ArrowRight, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useData } from "@/hooks/useData";
 
 const Blogs = () => {
-  const blogPosts = [
-    {
-      title: "Implementing Zero-Trust Network Architecture in Enterprise Environments",
-      excerpt: "A comprehensive guide to designing and implementing zero-trust security models for modern enterprise networks, including practical challenges and solutions.",
-      date: "2024-01-15",
-      readTime: "8 min read",
-      category: "Network Security",
-      tags: ["Zero Trust", "Security", "Enterprise", "Network Design"],
-      featured: true
-    },
-    {
-      title: "Multi-Cloud Networking: Best Practices and Pitfalls to Avoid",
-      excerpt: "Exploring the complexities of connecting multiple cloud providers while maintaining security, performance, and cost efficiency.",
-      date: "2023-12-20",
-      readTime: "6 min read",
-      category: "Cloud Infrastructure",
-      tags: ["Multi-Cloud", "AWS", "Azure", "Networking"]
-    },
-    {
-      title: "Automating Network Infrastructure with Infrastructure as Code",
-      excerpt: "How to leverage Terraform and Ansible to automate network provisioning and configuration management at scale.",
-      date: "2023-11-28",
-      readTime: "10 min read",
-      category: "Automation",
-      tags: ["IaC", "Terraform", "Ansible", "Automation"]
-    },
-    {
-      title: "SD-WAN Implementation: A Real-World Case Study",
-      excerpt: "Lessons learned from implementing SD-WAN across 15 branch offices, including performance improvements and cost savings achieved.",
-      date: "2023-10-15",
-      readTime: "7 min read",
-      category: "Network Infrastructure",
-      tags: ["SD-WAN", "Case Study", "Performance", "Cost Optimization"]
-    },
-    {
-      title: "Kubernetes Networking Deep Dive: CNI Plugins Comparison",
-      excerpt: "An in-depth analysis of popular CNI plugins including Calico, Cilium, and Flannel, with performance benchmarks and use case recommendations.",
-      date: "2023-09-22",
-      readTime: "12 min read",
-      category: "Container Networking",
-      tags: ["Kubernetes", "CNI", "Container Networking", "Performance"]
-    },
-    {
-      title: "Network Monitoring and Observability: Tools and Strategies",
-      excerpt: "Building comprehensive network monitoring solutions using modern observability tools and practices for proactive infrastructure management.",
-      date: "2023-08-18",
-      readTime: "9 min read",
-      category: "Monitoring",
-      tags: ["Monitoring", "Observability", "Network Management", "Tools"]
-    }
-  ];
+  const { data, loading } = useData();
 
-  const categories = ["All", "Network Security", "Cloud Infrastructure", "Automation", "Network Infrastructure", "Container Networking", "Monitoring"];
+  if (loading || !data) return <div className="min-h-screen flex items-center justify-center"><div className="text-primary">Loading...</div></div>;
 
   return (
     <div className="min-h-screen">
@@ -76,7 +27,7 @@ const Blogs = () => {
             
             {/* Category Filter */}
             <div className="flex flex-wrap justify-center gap-2 mb-12">
-              {categories.map((category, index) => (
+              {data.blogCategories.map((category, index) => (
                 <Button 
                   key={index}
                   variant={index === 0 ? "default" : "outline"}
@@ -89,7 +40,7 @@ const Blogs = () => {
             </div>
             
             {/* Featured Post */}
-            {blogPosts.filter(post => post.featured).map((post, index) => (
+            {data.blogPosts.filter(post => post.featured).map((post, index) => (
               <div key={index} className="mb-16">
                 <div className="bg-gradient-to-r from-tech-primary/10 to-tech-secondary/10 p-8 rounded-lg border border-primary/20 mb-8">
                   <div className="max-w-4xl mx-auto">
@@ -126,7 +77,7 @@ const Blogs = () => {
             
             {/* Blog Posts Grid */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {blogPosts.filter(post => !post.featured).map((post, index) => (
+              {data.blogPosts.filter(post => !post.featured).map((post, index) => (
                 <article 
                   key={index}
                   className="bg-card p-6 rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 group cursor-pointer"

@@ -1,7 +1,11 @@
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useData } from "@/hooks/useData";
 
 const Hero = () => {
+  const { data, loading } = useData();
+
+  if (loading || !data) return <div className="min-h-screen flex items-center justify-center"><div className="text-primary">Loading...</div></div>;
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-tech-primary/10 via-background to-tech-secondary/10" />
@@ -11,18 +15,17 @@ const Hero = () => {
           <div className="mb-8 relative">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-tech-primary to-tech-secondary p-1 mb-6">
               <div className="w-full h-full rounded-full bg-background flex items-center justify-center text-4xl font-bold text-primary">
-                AS
+                {data.personal.initials}
               </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-tech-primary to-tech-secondary bg-clip-text text-transparent">
-              Arijit Sarkar
+              {data.personal.name}
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-6">
-              Network & Infrastructure Engineer
+              {data.personal.title}
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              Passionate about building robust network architectures and scalable infrastructure solutions. 
-              Specializing in cloud technologies, network security, and system optimization.
+              {data.personal.description}
             </p>
           </div>
 

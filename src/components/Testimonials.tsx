@@ -1,29 +1,10 @@
 import { Star, Quote } from "lucide-react";
+import { useData } from "@/hooks/useData";
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      role: "IT Director",
-      company: "TechCorp Solutions",
-      content: "Arijit's expertise in network architecture was instrumental in our digital transformation. His attention to detail and proactive approach ensured our migration was seamless and secure.",
-      rating: 5
-    },
-    {
-      name: "Michael Chen",
-      role: "CTO",
-      company: "CloudFirst Inc",
-      content: "Working with Arijit was exceptional. His deep understanding of cloud infrastructure and automation helped us reduce operational costs by 35% while improving system reliability.",
-      rating: 5
-    },
-    {
-      name: "Emily Rodriguez",
-      role: "Project Manager",
-      company: "SecureNet Systems",
-      content: "Arijit's leadership during our network security overhaul was outstanding. He delivered the project on time and exceeded our security compliance requirements.",
-      rating: 5
-    }
-  ];
+  const { data, loading } = useData();
+
+  if (loading || !data) return null;
 
   return (
     <section className="py-20">
@@ -33,7 +14,7 @@ const Testimonials = () => {
         </h2>
         
         <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+          {data.testimonials.map((testimonial, index) => (
             <div 
               key={index}
               className="bg-card p-6 rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 relative group"

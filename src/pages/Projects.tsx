@@ -1,58 +1,12 @@
 import Navigation from "@/components/Navigation";
 import { ExternalLink, Github, Calendar, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useData } from "@/hooks/useData";
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Enterprise Network Redesign",
-      description: "Complete network infrastructure overhaul for a 500+ employee company, implementing SD-WAN and improving performance by 40%.",
-      technologies: ["Cisco", "SD-WAN", "BGP", "MPLS", "Network Monitoring"],
-      date: "2023",
-      status: "Completed",
-      category: "Network Infrastructure"
-    },
-    {
-      title: "Cloud Migration Project",
-      description: "Migrated on-premise infrastructure to AWS, implementing auto-scaling and reducing operational costs by 35%.",
-      technologies: ["AWS", "Terraform", "Kubernetes", "Docker", "CloudFormation"],
-      date: "2023",
-      status: "Completed",
-      category: "Cloud Infrastructure"
-    },
-    {
-      title: "Network Security Implementation",
-      description: "Designed and implemented comprehensive network security architecture including firewalls, IDS/IPS, and threat monitoring.",
-      technologies: ["Palo Alto", "Splunk", "Network Security", "Threat Analysis"],
-      date: "2022",
-      status: "Completed",
-      category: "Security"
-    },
-    {
-      title: "Automated Infrastructure Deployment",
-      description: "Built CI/CD pipeline for infrastructure deployment using Infrastructure as Code principles.",
-      technologies: ["Ansible", "Jenkins", "Python", "Terraform", "Git"],
-      date: "2022",
-      status: "Completed",
-      category: "Automation"
-    },
-    {
-      title: "Multi-Cloud Connectivity",
-      description: "Established secure connectivity between AWS, Azure, and on-premise infrastructure with redundant failover mechanisms.",
-      technologies: ["AWS", "Azure", "VPN", "Direct Connect", "Network Architecture"],
-      date: "2021",
-      status: "Completed",
-      category: "Network Architecture"
-    },
-    {
-      title: "IoT Network Design",
-      description: "Designed scalable IoT network infrastructure for manufacturing facility with 1000+ connected devices.",
-      technologies: ["IoT", "Network Segmentation", "Edge Computing", "MQTT"],
-      date: "2021",
-      status: "Completed",
-      category: "IoT Infrastructure"
-    }
-  ];
+  const { data, loading } = useData();
+
+  if (loading || !data) return <div className="min-h-screen flex items-center justify-center"><div className="text-primary">Loading...</div></div>;
 
   return (
     <div className="min-h-screen">
@@ -72,7 +26,7 @@ const Projects = () => {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
+              {data.projects.map((project, index) => (
                 <div 
                   key={index}
                   className="bg-card p-6 rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 group"

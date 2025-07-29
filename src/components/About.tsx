@@ -1,4 +1,9 @@
+import { useData } from "@/hooks/useData";
+
 const About = () => {
+  const { data, loading } = useData();
+
+  if (loading || !data) return null;
   return (
     <section className="py-20 bg-tech-surface">
       <div className="container mx-auto px-4">
@@ -9,33 +14,27 @@ const About = () => {
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                With over 5 years of experience in network and infrastructure engineering, I've dedicated my career to designing and implementing robust, scalable solutions that power modern enterprises.
-              </p>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                My expertise spans across cloud platforms, network security, automation, and infrastructure optimization. I'm passionate about leveraging cutting-edge technologies to solve complex problems and drive business success.
-              </p>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not architecting networks, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical blogs and community forums.
-              </p>
+              {data.about.paragraphs.map((paragraph, index) => (
+                <p key={index} className="text-lg text-muted-foreground leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
             </div>
             
             <div className="space-y-4">
               <div className="bg-card p-6 rounded-lg border border-border hover:border-primary/50 transition-colors">
                 <h3 className="text-xl font-semibold mb-2 text-primary">Location</h3>
-                <p className="text-muted-foreground">Kolkata, India</p>
+                <p className="text-muted-foreground">{data.personal.location}</p>
               </div>
               
               <div className="bg-card p-6 rounded-lg border border-border hover:border-primary/50 transition-colors">
                 <h3 className="text-xl font-semibold mb-2 text-primary">Experience</h3>
-                <p className="text-muted-foreground">5+ Years</p>
+                <p className="text-muted-foreground">{data.personal.experience}</p>
               </div>
               
               <div className="bg-card p-6 rounded-lg border border-border hover:border-primary/50 transition-colors">
                 <h3 className="text-xl font-semibold mb-2 text-primary">Specialization</h3>
-                <p className="text-muted-foreground">Network Architecture & Cloud Infrastructure</p>
+                <p className="text-muted-foreground">{data.personal.specialization}</p>
               </div>
             </div>
           </div>

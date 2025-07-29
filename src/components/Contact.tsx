@@ -2,8 +2,12 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useData } from "@/hooks/useData";
 
 const Contact = () => {
+  const { data, loading } = useData();
+
+  if (loading || !data) return null;
   return (
     <section className="py-20 bg-tech-surface">
       <div className="container mx-auto px-4">
@@ -29,7 +33,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Email</div>
-                  <div className="text-muted-foreground">arijit.sarkar@email.com</div>
+                  <div className="text-muted-foreground">{data.personal.email}</div>
                 </div>
               </div>
               
@@ -39,7 +43,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Phone</div>
-                  <div className="text-muted-foreground">+91 98765 43210</div>
+                  <div className="text-muted-foreground">{data.personal.phone}</div>
                 </div>
               </div>
               
@@ -49,7 +53,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Location</div>
-                  <div className="text-muted-foreground">Kolkata, India</div>
+                  <div className="text-muted-foreground">{data.personal.location}</div>
                 </div>
               </div>
             </div>
