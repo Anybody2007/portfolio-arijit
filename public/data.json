@@ -10,7 +10,7 @@
     "email": "arijit.sarkar@email.com",
     "phone": "+91 98765 43210"
   },
-  
+
   "about": {
     "paragraphs": [
       "With over 5 years of experience in network and infrastructure engineering, I've dedicated my career to designing and implementing robust, scalable solutions that power modern enterprises.",
@@ -18,47 +18,89 @@
       "When I'm not architecting networks, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical blogs and community forums."
     ]
   },
-  
+
   "skills": [
     {
       "icon": "Network",
       "title": "Network Technologies",
-      "skills": ["Cisco Routing & Switching", "BGP/OSPF", "MPLS", "SD-WAN", "Network Monitoring", "Load Balancing"]
+      "skills": [
+        "Cisco Routing & Switching",
+        "BGP/OSPF",
+        "MPLS",
+        "SD-WAN",
+        "Network Monitoring",
+        "Load Balancing"
+      ]
     },
     {
       "icon": "Cloud",
       "title": "Cloud Platforms",
-      "skills": ["AWS", "Azure", "Google Cloud", "Terraform", "CloudFormation", "Kubernetes"]
+      "skills": [
+        "AWS",
+        "Azure",
+        "Google Cloud",
+        "Terraform",
+        "CloudFormation",
+        "Kubernetes"
+      ]
     },
     {
       "icon": "Shield",
       "title": "Security",
-      "skills": ["Firewall Configuration", "VPN", "Network Security", "Threat Analysis", "Compliance", "Identity Management"]
+      "skills": [
+        "Firewall Configuration",
+        "VPN",
+        "Network Security",
+        "Threat Analysis",
+        "Compliance",
+        "Identity Management"
+      ]
     },
     {
       "icon": "Server",
       "title": "Infrastructure",
-      "skills": ["Linux Administration", "Windows Server", "VMware", "Docker", "Monitoring Tools", "Backup Solutions"]
+      "skills": [
+        "Linux Administration",
+        "Windows Server",
+        "VMware",
+        "Docker",
+        "Monitoring Tools",
+        "Backup Solutions"
+      ]
     },
     {
       "icon": "Code",
       "title": "Automation",
-      "skills": ["Python", "Bash Scripting", "Ansible", "Jenkins", "CI/CD", "Infrastructure as Code"]
+      "skills": [
+        "Python",
+        "Bash Scripting",
+        "Ansible",
+        "Jenkins",
+        "CI/CD",
+        "Infrastructure as Code"
+      ]
     },
     {
       "icon": "Database",
       "title": "Data & Analytics",
-      "skills": ["Network Analytics", "Performance Monitoring", "Log Analysis", "Grafana", "Prometheus", "ELK Stack"]
+      "skills": [
+        "Network Analytics",
+        "Performance Monitoring",
+        "Log Analysis",
+        "Grafana",
+        "Prometheus",
+        "ELK Stack"
+      ]
     }
   ],
-  
+
   "stats": [
     { "number": "50+", "label": "Projects Completed" },
     { "number": "99.9%", "label": "Uptime Achieved" },
     { "number": "200+", "label": "Servers Managed" },
     { "number": "5+", "label": "Years Experience" }
   ],
-  
+
   "achievements": [
     {
       "icon": "Award",
@@ -85,7 +127,7 @@
       "year": "2022"
     }
   ],
-  
+
   "testimonials": [
     {
       "name": "Sarah Johnson",
@@ -109,10 +151,10 @@
       "rating": 5
     }
   ],
-  
+
   "projects": [
     {
-      "title": "Enterprise Network Redesign",
+      "title": "Network Redesign",
       "description": "Complete network infrastructure overhaul for a 500+ employee company, implementing SD-WAN and improving performance by 40%.",
       "technologies": ["Cisco", "SD-WAN", "BGP", "MPLS", "Network Monitoring"],
       "date": "2023",
@@ -122,7 +164,13 @@
     {
       "title": "Cloud Migration Project",
       "description": "Migrated on-premise infrastructure to AWS, implementing auto-scaling and reducing operational costs by 35%.",
-      "technologies": ["AWS", "Terraform", "Kubernetes", "Docker", "CloudFormation"],
+      "technologies": [
+        "AWS",
+        "Terraform",
+        "Kubernetes",
+        "Docker",
+        "CloudFormation"
+      ],
       "date": "2023",
       "status": "Completed",
       "category": "Cloud Infrastructure"
@@ -130,7 +178,12 @@
     {
       "title": "Network Security Implementation",
       "description": "Designed and implemented comprehensive network security architecture including firewalls, IDS/IPS, and threat monitoring.",
-      "technologies": ["Palo Alto", "Splunk", "Network Security", "Threat Analysis"],
+      "technologies": [
+        "Palo Alto",
+        "Splunk",
+        "Network Security",
+        "Threat Analysis"
+      ],
       "date": "2022",
       "status": "Completed",
       "category": "Security"
@@ -146,7 +199,13 @@
     {
       "title": "Multi-Cloud Connectivity",
       "description": "Established secure connectivity between AWS, Azure, and on-premise infrastructure with redundant failover mechanisms.",
-      "technologies": ["AWS", "Azure", "VPN", "Direct Connect", "Network Architecture"],
+      "technologies": [
+        "AWS",
+        "Azure",
+        "VPN",
+        "Direct Connect",
+        "Network Architecture"
+      ],
       "date": "2021",
       "status": "Completed",
       "category": "Network Architecture"
@@ -160,7 +219,7 @@
       "category": "IoT Infrastructure"
     }
   ],
-  
+
   "experience": [
     {
       "title": "Senior Network Engineer",
@@ -202,10 +261,16 @@
         "Reduced network incidents by 45% through proactive monitoring",
         "Completed Cisco CCNA and security certifications"
       ],
-      "technologies": ["Cisco", "Network Security", "Firewalls", "VPN", "Network Monitoring"]
+      "technologies": [
+        "Cisco",
+        "Network Security",
+        "Firewalls",
+        "VPN",
+        "Network Monitoring"
+      ]
     }
   ],
-  
+
   "certifications": [
     {
       "name": "AWS Certified Solutions Architect - Professional",
@@ -232,7 +297,7 @@
       "credentialId": "AZ-700-123456"
     }
   ],
-  
+
   "blogPosts": [
     {
       "title": "Implementing Zero-Trust Network Architecture in Enterprise Environments",
@@ -284,9 +349,17 @@
       "tags": ["Monitoring", "Observability", "Network Management", "Tools"]
     }
   ],
-  
-  "blogCategories": ["All", "Network Security", "Cloud Infrastructure", "Automation", "Network Infrastructure", "Container Networking", "Monitoring"],
-  
+
+  "blogCategories": [
+    "All",
+    "Network Security",
+    "Cloud Infrastructure",
+    "Automation",
+    "Network Infrastructure",
+    "Container Networking",
+    "Monitoring"
+  ],
+
   "navigation": [
     { "name": "Home", "path": "/" },
     { "name": "Projects", "path": "/projects" },
