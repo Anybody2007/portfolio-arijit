@@ -10,12 +10,14 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <Hero />
-      <About />
-      <Skills />
-      <Achievements />
-      <Testimonials />
-      <Contact />
+      <div className="pt-16">
+        <Hero />
+        <About />
+        <Skills />
+        <Achievements />
+        <Testimonials />
+        <Contact />
+      </div>
     </div>
   );
 };

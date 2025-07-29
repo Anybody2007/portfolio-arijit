@@ -25,19 +25,6 @@ const Blogs = () => {
               </p>
             </div>
             
-            {/* Category Filter */}
-            <div className="flex flex-wrap justify-center gap-2 mb-12">
-              {data.blogCategories.map((category, index) => (
-                <Button 
-                  key={index}
-                  variant={index === 0 ? "default" : "outline"}
-                  size="sm"
-                  className="mb-2"
-                >
-                  {category}
-                </Button>
-              ))}
-            </div>
             
             {/* Featured Post */}
             {data.blogPosts.filter(post => post.featured).map((post, index) => (

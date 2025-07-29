@@ -1,4 +1,4 @@
-import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useData } from "@/hooks/useData";
 
@@ -29,16 +29,6 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="group">
-              <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
-              Download Resume
-            </Button>
-            <Button variant="outline" size="lg">
-              <Mail className="w-4 h-4 mr-2" />
-              Contact Me
-            </Button>
-          </div>
 
           <div className="flex justify-center space-x-6 mb-12">
             <Button variant="ghost" size="icon" className="hover:text-primary hover:scale-110 transition-all">

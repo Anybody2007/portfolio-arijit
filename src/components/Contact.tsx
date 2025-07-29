@@ -1,7 +1,4 @@
-import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { useData } from "@/hooks/useData";
 
 const Contact = () => {
@@ -15,7 +12,7 @@ const Contact = () => {
           Get In Touch
         </h2>
         
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
@@ -59,44 +56,6 @@ const Contact = () => {
             </div>
           </div>
           
-          {/* Contact Form */}
-          <div className="bg-card p-8 rounded-lg border border-border">
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium mb-2">First Name</label>
-                  <Input placeholder="John" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Last Name</label>
-                  <Input placeholder="Doe" />
-                </div>
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-2">Email</label>
-                <Input type="email" placeholder="john.doe@example.com" />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-2">Subject</label>
-                <Input placeholder="Project Discussion" />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-2">Message</label>
-                <Textarea 
-                  placeholder="Tell me about your project or how I can help you..."
-                  rows={5}
-                />
-              </div>
-              
-              <Button className="w-full group">
-                <Send className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
-                Send Message
-              </Button>
-            </form>
-          </div>
         </div>
       </div>
     </section>

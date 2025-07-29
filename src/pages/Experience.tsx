@@ -83,28 +83,6 @@ const Experience = () => {
               </div>
             </div>
             
-            {/* Certifications */}
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-tech-primary to-tech-secondary bg-clip-text text-transparent">
-                Certifications
-              </h2>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                {data.certifications.map((cert, index) => (
-                  <div 
-                    key={index}
-                    className="bg-card p-6 rounded-lg border border-border hover:border-primary/50 transition-colors"
-                  >
-                    <h3 className="text-lg font-semibold mb-2">{cert.name}</h3>
-                    <p className="text-muted-foreground mb-2">{cert.issuer}</p>
-                    <div className="flex justify-between items-center text-sm">
-                      <span className="text-primary">Issued: {cert.date}</span>
-                      <span className="text-muted-foreground">ID: {cert.credentialId}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </section>
       </div>
