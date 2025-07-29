@@ -1,21 +1,20 @@
 {
   "personal": {
     "name": "Arijit Sarkar",
-    "title": "Network & Infrastructure Engineer",
+    "title": "Network & On-Prem Infrastructure Engineer",
     "initials": "AS",
     "description": "Passionate about building robust network architectures and scalable infrastructure solutions. Specializing in cloud technologies, network security, and system optimization.",
-    "location": "Kolkata, India",
+    "location": "Bangalore, India",
     "experience": "5+ Years",
-    "specialization": "Network Architecture & Cloud Infrastructure",
-    "email": "arijit.sarkar@email.com",
-    "phone": "+91 98765 43210"
+    "specialization": "Network & On-Prem Infrastructure",
+    "email": "arijetsarkar@gmail.com",
+    "phone": "+91 87597 55318"
   },
 
   "about": {
     "paragraphs": [
-      "With over 5 years of experience in network and infrastructure engineering, I've dedicated my career to designing and implementing robust, scalable solutions that power modern enterprises.",
-      "My expertise spans across cloud platforms, network security, automation, and infrastructure optimization. I'm passionate about leveraging cutting-edge technologies to solve complex problems and drive business success.",
-      "When I'm not architecting networks, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical blogs and community forums."
+      "I am a highly accomplished IT infrastructure and virtualization specialist with over 7 years of experience in designing, optimizing, and securing enterprise-scale systems. Currently serving as a Senior IT and Network Admin at Kloudspot India, I lead critical initiatives across Linux server administration, multi-region networking, and compliance. My expertise spans achieving 99.9% uptime for 50+ Linux servers, architecting secure global networks via WireGuard VPN (reducing latency by 40%), and automating SSL renewals for 150+ devices to eliminate certificate outages.",
+      "Previously at Zen & Art Infotek, I managed large-scale VMware environments, including 100+ ESXi hosts supporting 500+ VMs with 99.95% uptime. I optimized vSAN storage (cutting costs by 25%), streamlined HA/DRS operations, and resolved 95% of critical failures within SLA. My foundational role at OnProcess Technology honed my skills in enterprise ticketing, VMware/AD support, and Windows deployment, where I resolved 300+ monthly tickets while maintaining 95% SLA compliance."
     ]
   },
 
@@ -25,23 +24,18 @@
       "title": "Network Technologies",
       "skills": [
         "Cisco Routing & Switching",
-        "BGP/OSPF",
-        "MPLS",
-        "SD-WAN",
-        "Network Monitoring",
-        "Load Balancing"
+        "BGP",
+        "OSPF",
+        "EIGRP",
+        "DMVPN",
+        "SNMP"
       ]
     },
     {
       "icon": "Cloud",
       "title": "Cloud Platforms",
       "skills": [
-        "AWS",
-        "Azure",
-        "Google Cloud",
-        "Terraform",
-        "CloudFormation",
-        "Kubernetes"
+        "AWS"
       ]
     },
     {
@@ -60,9 +54,9 @@
       "icon": "Server",
       "title": "Infrastructure",
       "skills": [
+        "VMware",
         "Linux Administration",
         "Windows Server",
-        "VMware",
         "Docker",
         "Monitoring Tools",
         "Backup Solutions"
@@ -74,10 +68,7 @@
       "skills": [
         "Python",
         "Bash Scripting",
-        "Ansible",
-        "Jenkins",
-        "CI/CD",
-        "Infrastructure as Code"
+        "Ansible"
       ]
     },
     {
@@ -95,59 +86,59 @@
   ],
 
   "stats": [
-    { "number": "50+", "label": "Projects Completed" },
-    { "number": "99.9%", "label": "Uptime Achieved" },
-    { "number": "200+", "label": "Servers Managed" },
+    { "number": "10+", "label": "Projects Completed" },
+    { "number": "99.7%", "label": "Uptime Achieved" },
+    { "number": "500+", "label": "Servers Managed" },
     { "number": "5+", "label": "Years Experience" }
   ],
 
   "achievements": [
     {
       "icon": "Award",
-      "title": "AWS Certified Solutions Architect",
-      "description": "Professional level certification demonstrating expertise in designing distributed systems on AWS",
+      "title": "VCP VMware Certified Professional",
+      "description": "Professional level certification demonstrating expertise in VMWare Vcenter and ESXi",
       "year": "2023"
+    },
+    {
+      "icon": "Award",
+      "title": "Red Hat Certified System Administrator (EX200)",
+      "description": "Professional level certification demonstrating expertise in Linux Systems",
+      "year": "2023"
+    },
+    {
+      "icon": "Award",
+      "title": "CCNP ENARSI 300-410",
+      "description": "Professional level certification demonstrating expertise in Cisco dynamic routing protocols",
+      "year": "2025"
     },
     {
       "icon": "TrendingUp",
       "title": "Network Performance Optimization",
-      "description": "Achieved 40% improvement in network performance for enterprise clients through infrastructure redesign",
-      "year": "2023"
-    },
-    {
-      "icon": "Users",
-      "title": "Team Leadership",
-      "description": "Successfully led a team of 8 engineers in migrating critical infrastructure to cloud",
-      "year": "2022"
-    },
-    {
-      "icon": "CheckCircle",
-      "title": "Zero Downtime Migration",
-      "description": "Orchestrated seamless migration of 200+ servers with zero business impact",
-      "year": "2022"
+      "description": "Achieved 20% improvement in network performance for enterprise clients through infrastructure redesign",
+      "year": "2025"
     }
   ],
 
   "testimonials": [
     {
-      "name": "Sarah Johnson",
+      "name": "Sudipto Roy",
       "role": "IT Director",
-      "company": "TechCorp Solutions",
-      "content": "Arijit's expertise in network architecture was instrumental in our digital transformation. His attention to detail and proactive approach ensured our migration was seamless and secure.",
+      "company": "Accenture",
+      "content": "Arijit is skilled, hardworking and enthusiastic about trying new initiatives at work place. Best wishes! ",
       "rating": 5
     },
     {
-      "name": "Michael Chen",
-      "role": "CTO",
-      "company": "CloudFirst Inc",
-      "content": "Working with Arijit was exceptional. His deep understanding of cloud infrastructure and automation helped us reduce operational costs by 35% while improving system reliability.",
+      "name": "Debarshi Nag",
+      "role": "General Manager",
+      "company": "QRC Assurance And Solutions with expertise in IT Security and GRC",
+      "content": "Arijit has been a very dedicated and sincere professional who can be a great value addition to the high performance team. A dedicated learner with amazing tech skills! The time span he has spent with us, he proved his worth and his passion for learning new concepts. I am sure he will be an indispensable asset to any team or project!",
       "rating": 5
     },
     {
-      "name": "Emily Rodriguez",
-      "role": "Project Manager",
-      "company": "SecureNet Systems",
-      "content": "Arijit's leadership during our network security overhaul was outstanding. He delivered the project on time and exceeded our security compliance requirements.",
+      "name": "Jaime Killoran",
+      "role": "Global Infrastructure Associate Analyst",
+      "company": "Accenture",
+      "content": "I've worked with Arijit at OnProcess Technology. He's very hardworking, knowledgable, personable, and easy to get along with. Great guy!",
       "rating": 5
     }
   ],
