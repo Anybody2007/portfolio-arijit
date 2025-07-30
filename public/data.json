@@ -151,7 +151,7 @@
       "date": "2024",
       "status": "Completed",
       "category": "Logging Network Infrastructure",
-      "link": ""
+      "link": "https://github.com/Anybody2007/single-node-elk-stack"
     },
     {
       "title": "DNS with Bind9 Docker",
@@ -160,7 +160,7 @@
       "date": "2024",
       "status": "Completed",
       "category": "On-Prem Infrastructure",
-      "link": ""
+      "link": "https://github.com/Anybody2007/dns-bind9"
     },
     {
       "title": "Guacamole Container with Nginx Reverse Proxy with 2FA protection",
@@ -174,7 +174,7 @@
       "date": "2024",
       "status": "Completed",
       "category": "Security",
-      "link": ""
+      "link": "https://github.com/Anybody2007/guacamole-docker"
     },
     {
       "title": "DNS with Bind9 and PiHole Combined Docker Configuration",
@@ -183,7 +183,7 @@
       "date": "2024",
       "status": "Completed",
       "category": "Network Security",
-      "link": ""
+      "link": "https://github.com/Anybody2007/bind9-and-pihole-docker"
     }
   ],
 
@@ -247,48 +247,54 @@
     {
       "name": "Cisco Certified Network Professional (CCNP)",
       "issuer": "Network Kings",
-      "date": "2025",
-      "link": ""
+      "date": "2025"
     },
     {
       "name": "VCP VMware Certified Professional [V7]",
       "issuer": "VMWare",
       "date": "2023",
-      "credentialId": "VMW-03070710P-030137656"
+      "credentialId": "VMW-03070710P-030137656",
+      "link": "https://drive.google.com/file/d/1jM-mXxr2_iyt2idCCsZjYtcoMB1DpIIy/view?usp=drive_link"
     },
     {
       "name": "VMware vSAN: Plan and Deploy [V7]",
       "issuer": "VMWare",
       "date": "2022",
-      "credentialId": "VVMW-03070710P-03013765"
+      "credentialId": "VVMW-03070710P-03013765",
+      "link": "https://drive.google.com/file/d/1HJc5YZHPSmyrJ2iaFxyZdKdl6lMBG53o/view?usp=drive_link"
     },
     {
       "name": "VMware vSphere: Optimize and Scale [V7]",
       "issuer": "VMWare",
       "date": "2022",
-      "credentialId": "VMW-03070710P-03013765"
+      "credentialId": "VMW-03070710P-03013765",
+      "link": "https://drive.google.com/file/d/1tKpvkLmpCHG2W-A1SK55k53KI8ZnQFfm/view?usp=drive_link"
     },
     {
       "name": "Red Hat Certified System Administrator (EX200)",
       "issuer": "Linkedin",
       "date": "2022",
-      "credentialId": "AQTt22D4r05LBiPwwzCEGgA1RHvd"
+      "credentialId": "AQTt22D4r05LBiPwwzCEGgA1RHvd",
+      "link": "https://drive.google.com/file/d/1dOwUYKJmKoeBXSQuREjEY1UiT00Bx0T0/view?usp=drive_link"
     },
     {
       "name": "VxRail Administration",
       "issuer": "DELL",
-      "date": "2022"
+      "date": "2022",
+      "link": "https://drive.google.com/file/d/1qq6hdMaMhYhe7ixlP3DTlkb4AcVC8kKT/view?usp=drive_link"
     },
     {
       "name": "VCF 4.2 on VxRail Administration",
       "issuer": "DELL",
-      "date": "2022"
+      "date": "2022",
+      "link": "https://drive.google.com/file/d/1u2H_445g8iF3JzXpOEcKts0-KxEDGgVE/view?usp=drive_link"
     },
     {
       "name": "CompTIA Network+",
-      "issuer": "CYBARY",
+      "issuer": "CYBRARY",
       "date": "2018",
-      "credentialId": "C-6d48f7a34-8a7bac"
+      "credentialId": "C-6d48f7a34-8a7bac",
+      "link": "https://drive.google.com/file/d/1zEcBWBcMd_HSnOZpPXFWYLwrWSB8HN2o/view?usp=drive_link"
     }
   ],
 
