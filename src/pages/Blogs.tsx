@@ -64,11 +64,12 @@ const Blogs = () => {
                           {post.category}
                         </span>
                       </div>
-
-                      <Button className='group'>
-                        Read Full Article
-                        <ArrowRight className='w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform' />
-                      </Button>
+                      <a href={post.link} target='_blank'>
+                        <Button className='group'>
+                          Read Full Article
+                          <ArrowRight className='w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform' />
+                        </Button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -120,7 +121,9 @@ const Blogs = () => {
                           {post.readTime}
                         </div>
                       </div>
-                      <ArrowRight className='w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all' />
+                      <a href={post.link} target='_blank'>
+                        <ArrowRight className='w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all' />
+                      </a>
                     </div>
                   </article>
                 ))}

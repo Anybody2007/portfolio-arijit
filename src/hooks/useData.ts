@@ -49,6 +49,7 @@ interface Project {
   date: string;
   status: string;
   category: string;
+  link: string;
 }
 
 interface Experience {
@@ -66,9 +67,11 @@ interface Certification {
   issuer: string;
   date: string;
   credentialId: string;
+  link: string;
 }
 
 interface BlogPost {
+  link: string;
   title: string;
   excerpt: string;
   date: string;
@@ -96,6 +99,13 @@ interface PortfolioData {
   blogPosts: BlogPost[];
   blogCategories: string[];
   navigation: NavigationItem[];
+  socialMedia: SocialMediaData;
+}
+
+interface SocialMediaData {
+  linkedin: string;
+  github: string;
+  twitter: string;
 }
 
 export const useData = () => {

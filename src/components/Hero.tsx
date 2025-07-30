@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useData } from '@/hooks/useData';
 
@@ -40,6 +40,9 @@ const Hero = () => {
 
           <div className='flex justify-center space-x-6 mb-12'>
             <Button
+              onClick={() => {
+                window.open(data.socialMedia.github, '_blank');
+              }}
               variant='ghost'
               size='icon'
               className='hover:text-primary hover:scale-110 transition-all'
@@ -47,6 +50,9 @@ const Hero = () => {
               <Github className='w-6 h-6' />
             </Button>
             <Button
+              onClick={() => {
+                window.open(data.socialMedia.linkedin, '_blank');
+              }}
               variant='ghost'
               size='icon'
               className='hover:text-primary hover:scale-110 transition-all'
@@ -54,16 +60,15 @@ const Hero = () => {
               <Linkedin className='w-6 h-6' />
             </Button>
             <Button
+              onClick={() => {
+                window.open(data.socialMedia.twitter, '_blank');
+              }}
               variant='ghost'
               size='icon'
               className='hover:text-primary hover:scale-110 transition-all'
             >
-              <Mail className='w-6 h-6' />
+              <Twitter className='w-6 h-6' />
             </Button>
-          </div>
-
-          <div className='animate-bounce'>
-            <ArrowDown className='w-6 h-6 mx-auto text-muted-foreground' />
           </div>
         </div>
       </div>

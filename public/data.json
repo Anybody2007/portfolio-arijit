@@ -34,9 +34,7 @@
     {
       "icon": "Cloud",
       "title": "Cloud Platforms",
-      "skills": [
-        "AWS"
-      ]
+      "skills": ["AWS"]
     },
     {
       "icon": "Shield",
@@ -65,11 +63,7 @@
     {
       "icon": "Code",
       "title": "Automation",
-      "skills": [
-        "Python",
-        "Bash Scripting",
-        "Ansible"
-      ]
+      "skills": ["Python", "Bash Scripting", "Ansible"]
     },
     {
       "icon": "Database",
@@ -147,7 +141,13 @@
     {
       "title": "Elasticsearch, Kibana, and Logstash Docker Configuration",
       "description": "Complete network logging and alerting for a 100+ devices in the company, implementing Log and improving performance by 20%.",
-      "technologies": ["Docker", "Elastic-Search", "Logstash", "Kibana", "Network Monitoring"],
+      "technologies": [
+        "Docker",
+        "Elastic-Search",
+        "Logstash",
+        "Kibana",
+        "Network Monitoring"
+      ],
       "date": "2024",
       "status": "Completed",
       "category": "Logging Network Infrastructure",
@@ -156,12 +156,7 @@
     {
       "title": "DNS with Bind9 Docker",
       "description": "Docker Compose setup for running a Bind9 DNS server, alongside the necessary DNS configuration files. It is designed to be easily customizable and deployable. You can use this DNS for your home, so that you make your internet faster.",
-      "technologies": [
-        "AWS",
-        "Docker",
-        "Network",
-        "DNS"
-      ],
+      "technologies": ["AWS", "Docker", "Network", "DNS"],
       "date": "2024",
       "status": "Completed",
       "category": "On-Prem Infrastructure",
@@ -208,7 +203,15 @@
         "Unified Monitoring: Centralized oversight of 500+ endpoints via Tactical RMM, enabling real-time alerts and reducing manual audit time by 50%.",
         "ISO 9001 Compliance: Led documentation and process alignment for ISO 9001 certification, achieving 100% compliance in the first audit cycle with zero non-conformities."
       ],
-      "technologies": ["Mikrotik", "Cisco", "VMware", "Ansible", "Kubernetes","Firewalls", "VPN"]
+      "technologies": [
+        "Mikrotik",
+        "Cisco",
+        "VMware",
+        "Ansible",
+        "Kubernetes",
+        "Firewalls",
+        "VPN"
+      ]
     },
     {
       "title": "Service Delivery Engineer",
@@ -287,7 +290,6 @@
       "date": "2018",
       "credentialId": "C-6d48f7a34-8a7bac"
     }
-
   ],
 
   "blogPosts": [
@@ -330,6 +332,12 @@
     "Container Networking",
     "Monitoring"
   ],
+
+  "socialMedia": {
+    "linkedin": "https://www.linkedin.com/in",
+    "github": "https://www.github.com",
+    "twitter": "https://www.twtitter.com"
+  },
 
   "navigation": [
     { "name": "Home", "path": "/" },
